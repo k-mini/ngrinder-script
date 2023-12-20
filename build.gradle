@@ -1,0 +1,20 @@
+plugins {
+    id 'groovy'
+}
+
+group = 'com.kmini'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.codehaus.groovy:groovy-all:3.0.19'
+    // ngrinder
+    implementation 'org.ngrinder:ngrinder-groovy:3.5.8'
+}
+
+test {
+    useJUnitPlatform()
+}
